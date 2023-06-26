@@ -6,6 +6,11 @@ module.exports = {
 	entry: {
 		main: "./src/main.tsx"
 	},
+	mode: 'production',
+	optimization: {
+		moduleIds: 'named',
+		minimize: false
+	},
 	builtins: {
 		treeShaking: true,
 		html: [
